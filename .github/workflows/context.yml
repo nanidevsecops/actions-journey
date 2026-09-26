@@ -1,0 +1,11 @@
+name: check context
+on: push
+jobs:
+  chkcontxt:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print the vals
+        run: |
+          echo "Commit: ${{ github.sha }}"
+          echo "RunnerOS: ${{ runner.os }}"
+
