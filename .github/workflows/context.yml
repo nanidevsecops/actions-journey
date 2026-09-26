@@ -8,7 +8,7 @@ jobs:
         run: |
           echo "Commit: ${{ github.sha }}"
           echo "Repository: ${{ github.repository }}"
-          echo "Repository: ${{ github.repository }}"
+          echo "Branch: ${{ github.ref_name }}" 
           echo "Event: ${{ github.event_name }}"
           echo "RunnerOS: ${{ runner.os }}"
 
