@@ -1,0 +1,16 @@
+name: inspect
+on: push
+jobs:
+  inspect-runner:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repo
+        uses: actions/checkout@v4
+      - name: print kernal env
+        run: |
+          uname -a
+          ls -ltr
+      - name: repo file count
+        run: find . -type f -not -path '*/.*' | wc -l 
+     
+
