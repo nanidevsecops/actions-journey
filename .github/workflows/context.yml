@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 name: context
 on: push
 jobs:
@@ -12,19 +11,3 @@ jobs:
           echo "Commit: ${{ github.sha }}"
           echo "Event: ${{ github.event_name }}"
           echo "Runner OS: ${{ runner.os }}"
-=======
-name: check context
-on: push
-jobs:
-  chkcontxt:
-    runs-on: ubuntu-latest
-    steps:
-      - name: print the vals
-        run: |
-          echo "Commit: ${{ github.sha }}"
-          echo "Repository: ${{ github.repository }}"
-          echo "Branch: ${{ github.ref_name }}" 
-          echo "Event: ${{ github.event_name }}"
-          echo "RunnerOS: ${{ runner.os }}"
-
->>>>>>> f4f9809a330d5f11e1d70f3c0a1d2b4ee43a26f9
